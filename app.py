@@ -16,7 +16,7 @@ creds = service_account.Credentials.from_service_account_file(
 service = build('sheets', 'v4', credentials=creds)
 sheet_id = '19_3Ldqq-RkgXXtqp3LM45TsTNaX2SC6sYpMTnmVZJJg'
 
-@app.route('/read_sheet')
+@app.route('/')
 def read_sheet():
     # Specify range in the format "Sheet1!A1:D10"
     range_name = 'Sheet1!A1:D10'
